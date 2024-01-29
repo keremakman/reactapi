@@ -6,6 +6,8 @@ import Loading from '../components/Loading.js';
 
 function Student(){
 
+    
+
     const[loading,setLoading] = useState(true);
     const[students,setStudents] = useState([]);
 
@@ -61,10 +63,10 @@ function Student(){
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>
-                    <Link to={`/students/${item.id}/edit`} className="btn btn-success">Edit</Link>
+                    <Link to={`/students/${item.id}/edit`} className="btn btn-success">Düzenle</Link>
                 </td>
                 <td>
-                    <button type="button" onClick={(e) => deleteStudent(e, item.id)} className="btn btn-danger">Delete</button>
+                    <button type="button" onClick={(e) => deleteStudent(e, item.id)} className="btn btn-danger">Sil</button>
                 </td>
             </tr>
         )
@@ -77,21 +79,24 @@ function Student(){
                     <div className="card">
                         <div className="card-header">
                             <h4>
-                                Student List
+                               Müşteri Listesi
                                 <Link to="/students/create" className="btn btn-primary float-end">
-                                    Add Student
+                                    Müşteri Ekle
                                 </Link>
                             </h4>
                         </div>
+
+                        
+
                         <div className="card-body">
                             <table className="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Course</th>
+                                        <th>Ad Soyad</th>
+                                        <th>Tip</th>
                                         <th>Email</th>
-                                        <th>Phone</th>
+                                        <th>Numara</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>

@@ -1,39 +1,56 @@
-function About(){
-    return (
-        <div>
-             <div className="container mt-5">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="card">
-                            <div className="card-header">
-                                <h4> About Us
-                            </h4>
-                        </div>
-                        <div className="card-body">
-                            <p>Hoş Geldiniz! Biz WebYazılım, 2024 yılında kurulan bir WEB API firmasıyız. Misyonumuz, müşterilerimize kaliteli ürünler ve hizmetler sunarak onların ihtiyaçlarını karşılamak ve memnuniyetini sağlamaktır.
-                            Her geçen gün değişen ve gelişen dünyada, müşterilerimize en iyi hizmeti sunmayı hedefliyoruz. En son teknoloji ve en iyi uygulamaları kullanarak, müşterilerimizin beklentilerini aşmayı amaçlıyoruz.
-                            Kalite ve Güvenilirlik: WebYazılım, ürün ve hizmetlerinde kaliteye ve güvenilirliğe büyük önem verir. Müşteri memnuniyetini en üst seviyede tutarak uzun vadeli ilişkiler kurmayı amaçlarız.
+import React from 'react';
+import './About.css'; 
 
-Uzman Ekibimiz: Alanında uzmanlaşmış bir ekip, müşterilerimize en iyi hizmeti sunmak için sürekli olarak çalışır. Deneyimli ve yetenekli ekibimiz, her projeye profesyonellik ve özveri ile yaklaşır.
+function About() {
+        const phoneNumber = '905436155147';
 
-İnovasyon ve Gelişim: WebYazılım, sektördeki yenilikleri takip eder ve sürekli olarak kendini geliştirir. Bu sayede müşterilerimize en güncel ve etkili çözümleri sunabilmekteyiz.
-
-Sosyal Sorumluluk: Sadece iş yapmakla kalmayıp, topluma ve çevreye karşı sorumluluklarımızın bilincindeyiz. Sosyal sorumluluk projelerine katkıda bulunarak toplumsal fayda sağlamayı amaçlıyoruz.
-                            </p>
-                            Teşekkür ederiz!
-
-                            <br/>WebYazılım Ekibi
-                            <hr/>
-                            <br/>
-                            <p>&copy; 2024 | Tüm hakları saklıdır. </p>
-                            <hr/>
-                        </div>
-                        </div>
-                    </div>
+        const handleCallButtonClick = () => {
+         
+            window.open(`tel:${905436155147}`);
+            console.log(`Arama butonuna tıklandı. Numara: ${phoneNumber}`);
+          };
+  return (
+    <div className="about-container">
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="card">
+              <div className="card-header">
+                <h1>Hikayemiz</h1>
+              </div>
+              <div className="card-body">
+                <p>
+                  Merhaba! Ben Kerem Akman, Osmaniye Korkut Ata Üniversite'sinde okuyan tutkulu bir grafik tasarımcı ve yazılımcıyım.
+                  Görsel olarak çarpıcı tasarımlar oluşturmak konusunda uzmanlaştım.
+                  Tasarım felsefem ve beni diğerlerinden ayıran özellikler hakkında sizi biraz bilgilendireyim.
+                </p>
+                <p>
+                  <strong>Tasarım Felsefesi:</strong> Tasarım anlayışım dengeli, basit ve işlevsel olmaya odaklanmıştır.
+                  İyi tasarlanmış bir tasarımın sadece iyi görünmekle kalmayıp aynı zamanda amacına etkili bir şekilde hizmet etmesi gerektiğine inanıyorum.
+                </p>
+                <p>
+                  <strong>Yaratıcılık Tutkusu:</strong> Yaratıcılık konusundaki derin tutkumla, fikirleri görsel başyapıtlara dönüştürmeyi seviyorum.
+                  Marka kimliği, web sitesi veya baskı malzemesi olsun, her projeye benzersiz ve yenilikçi bir dokunuş katma konusunda çaba sarf ediyorum.
+                </p>
+                <p>
+                  <strong>Müşteri Odaklı Yaklaşım:</strong> Memnuniyetiniz benim önceliğimdir. Müşterilerle yakın işbirliği yaparım, hedeflerini ve tercihlerini anlamak için çaba sarf ederim,
+                  böylece projelerinizi en iyi şekilde gerçekleştirebilirim.
+                </p>
+                <div className="text-center mt-4">
+                  <button
+                    className="btn btn-primary"
+                    onClick={handleCallButtonClick}
+                  >
+                    Beni Ara
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default About;

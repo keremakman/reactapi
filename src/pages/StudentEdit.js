@@ -102,7 +102,7 @@ function StudentEdit(){
                                 <h4> Edit Student
                                    
                                     <Link to="/students" className="btn btn-danger float-end">
-                                        Back
+                                        Geri
                                     </Link>
                             </h4>
                         </div>
@@ -119,17 +119,17 @@ function StudentEdit(){
                                     <span className="text-danger">{inputErrorList.email}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <label>Phone</label>
+                                    <label>Telefon Numarası</label>
                                     <input type="text" name="phone" value={student.phone} onChange={handleInput} className="form-control"></input>
                                     <span className="text-danger">{inputErrorList.phone}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <label>Course</label>
+                                    <label>Tip</label>
                                     <input type="text" name="course" value={student.course} onChange={handleInput} className="form-control"></input>
                                     <span className="text-danger">{inputErrorList.course}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <button type="submit" class="btn btn-primary">Update Student</button>
+                                    <button type="submit" class="btn btn-primary">Güncelle</button>
                                 </div>
                             </form>
                         </div>

@@ -67,17 +67,17 @@ function StudentCreate(){
                     <div className="col-md-12">
                         <div className="card">
                             <div className="card-header">
-                                <h4> Add Student
+                                <h4> Müşteri ekle
                                    
                                     <Link to="/students" className="btn btn-danger float-end">
-                                        Back
+                                        Geri
                                     </Link>
                             </h4>
                         </div>
                         <div className="card-body">
                             <form onSubmit={saveStudent}>
                                 <div className="mb-3">
-                                    <label>Name</label>
+                                    <label>Ad Soyad</label>
                                     <input type="text" name="name" value={student.name} onChange={handleInput} className="form-control"></input>
                                     <span className="text-danger">{inputErrorList.name}</span>
                                 </div>
@@ -87,17 +87,17 @@ function StudentCreate(){
                                     <span className="text-danger">{inputErrorList.email}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <label>Phone</label>
+                                    <label>Telefon Numarası</label>
                                     <input type="text" name="phone" value={student.phone} onChange={handleInput} className="form-control"></input>
                                     <span className="text-danger">{inputErrorList.phone}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <label>Course</label>
+                                    <label>Tip</label>
                                     <input type="text" name="course" value={student.course} onChange={handleInput} className="form-control"></input>
                                     <span className="text-danger">{inputErrorList.course}</span>
                                 </div>
                                 <div className="mb-3">
-                                    <button type="submit" class="btn btn-primary">Save Student</button>
+                                    <button type="submit" class="btn btn-primary">Save Course</button>
                                 </div>
                             </form>
                         </div>

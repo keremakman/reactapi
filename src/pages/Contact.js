@@ -8,7 +8,7 @@ function Contact(){
                     <div className="col-md-12">
                         <div className="card">
                             <div className="card-header">
-                                <h4> Contact Us
+                                <h4> İletişime Geç
                             </h4>
                         </div>
                         <div className="card-body">
@@ -23,6 +23,8 @@ function Contact(){
                                     <input type="text" name="email"  className="form-control"></input>
                                 
                                 </div>
+                                
+                                
                                
                                 <div className="mb-3">
                                     <label>Message</label>
@@ -30,7 +32,7 @@ function Contact(){
                                
                                 </div>
                                 <div className="mb-3">
-                                    <button type="submit"  class="btn btn-primary">Submit</button>
+                                    <button type="submit"  class="btn btn-primary">Gönder</button>
                                 </div>
                             </form>
                         </div>
