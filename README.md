@@ -1,3 +1,10 @@
+Bu Logo müşteri portfoyum için oluşturduğum websitedir. 
+Frontend kısmıdır.
+
+Backend kısmı için linke tıklayınız : https://github.com/keremakman272727/laravelapi-portfoy/tree/main
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
